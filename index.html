@@ -21,6 +21,13 @@
 
 	    var projectsElement= "<h1>" + value.description + "<\/h1>";
 	    	console.log(projectsElement);
+	    
+	    var projectParent = '<div id="project-' + value.id + '">' + projectsElement + '<\/div>'
+	    	console.log(projectParent);
+	    	
+	    var previuosContent = $('#projects-holder').html();
+	    	$('#projects-holder').html(previuosContent + projectParent);
+
 
 	    });
 	  })
