@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<titl</title>
-</head>
-<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<title>Todo List</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$.ajax({
+	    // http may be used instead of https if required
+	    url: "https://sheetsu.com/apis/2c1959f9",
+	    crossDomain : true,
+	  })
+	  .done(function(data) {
+	    if (data.length == 0) {
+	      console.log("No results found");
+	      return;
+	    }
+	    $.each(data, function(key, value) {
+	       console.log(value);
+
+	    var projectsElement= "<h1> + value.description" + "<\/h1>" ;
+
+	    });
+	  })
+	  .fail(function() {
+	    console.log("Failed");
+	  });
+
+  </script>
 	
+</head>
+
+
+<body>
+	<div id="projects-holder"></div>;
+
+	<div class="add_task">
+		<input type="text"> 
+		<button>Add task</button>
+	</div>
+
 </body>
 </html>

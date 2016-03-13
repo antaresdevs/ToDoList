@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.add_task {
+	height: 50px;
+	width: 600px;
+	padding: 15px 100px 15px 100px; 
+	border: 1px solid #999;
+}
+
+.add_task input {
+	width: 400px;
+	height: 20px;
+	
+}
